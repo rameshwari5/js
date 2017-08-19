@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Date and Time </title>
+
+	<script >
+	function date()
+	{
+		var a = new Date();
+		
+		document.getElementById("1").innerHTML=a.toDateString();
+
+	}
+	function time()
+	{
+		var a = new Date();
+		var hr = a.getHours();
+		var min = a.getMinutes();
+		var time=hr+":"+min;
+		document.getElementById("2").innerHTML=time;
+
+	}
+		
+	</script>
+	
+
+</head>
+<body>
+<input type="button" value="Date" onclick="date()">
+  <p id="1">
+ 
+  </p>
+  
+  <input type="button" value="Time" onclick="time()">
+  <p id ="2">
+
+  </p>
+</body>
+</html>
