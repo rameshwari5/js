@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> proper date format</title>
+	<script>
+		function date()
+		{
+			var a = new Date();
+			var day = a.getDate();
+			var month = a.getMonth()+1;
+			var year =a.getFullYear();
+
+			var format1 = day+"/"+month+"/"+year;	
+			document.getElementById('1').innerHTML = format1;
+
+			var format2 = month+"/"+day+"/"+year;	
+			document.getElementById('2').innerHTML = format2;
+
+			var format3 = day+"-"+month+"-"+year;	
+			document.getElementById('3').innerHTML = format3;
+
+
+		}
+	</script>
+</head>
+
+<body onload="date()">
+<p>Format 1: <span id="1"></span></p>
+<p>Format 2: <span id="2"></span></p>
+<p>Format 3: <span id="3"></span></p>
+
+
+</body>
+</html>
