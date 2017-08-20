@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> calculate multiplication and division of two numbers </title>
+	<script >
+		function multiply ()
+		   {
+			var a = document.getElementById('1').value;
+
+			var b = document.getElementById('2').value;
+			 var c = a*b;
+			 document.getElementById ("r").innerHTML=c;
+			
+			}
+			function divide ()
+			{
+			    	// body...
+
+			    	var a = document.getElementById('1').value;
+			    	var b = document.getElementById('2').value;
+			    	var c = a/b;
+			    	 document.getElementById ("r").innerHTML=c;
+			}
+
+	</script>
+</head>
+<body>
+<p>
+ <br>   <input type="text" id = "1"> <br>
+ <br>   <input type="text" id = "2"><br>
+ 
+ <br>   <button onclick="multiply()">multiply</button><br>
+<br>    <button onclick="divide()">divide</button><br>
+<br>   <label type = "text"> The result = <span id ="r"></span></label><br>
+</p>
+</body>
+</html>
