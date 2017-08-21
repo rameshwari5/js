@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>temperature</title>
+	<script >
+		function conv()
+		{
+			var a,b;
+			var a = document.getElementById('1').value;
+			var b = (a-32)/9*5;
+			 document.getElementById ('2').innerHTML=b
+		}
+	</script>
+</head>
+<body>
+<p>
+	<br> <input type="text" id ="1" class="form control" placeholder="temperature in farenheit"><br>
+	<br> <button onclick="conv()">calculate</button> <br>
+	<br> <label type = "text"> The result = <span id ="2"></span></label><br>
+</p>
+</body>
+</html>
