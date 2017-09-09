@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> check two no </title>
+	<script >
+		function check()
+		{
+			var x=document.getElementById("1").value;
+			var y=document.getElementById("2").value;
+			var z=(parseInt(x)+parseInt(y));
+
+
+			if(x==50 )
+			{
+               document.write("num1 is equal to 50");
+			}
+			 else if (y==50)
+			{
+
+                  document.write("num2 is equal to 50");
+			}
+			 else  (z==50)
+			{
+				document.write("result  is equal to 50 or greater to 50");
+			}
+
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="1" ><br><br>
+<input type="text" id="2" ><br><br>
+ <input type="button" value="Calculate" onclick="check()"><br><br>
+</body>
+</html>

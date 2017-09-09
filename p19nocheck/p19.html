@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> check the no </title>
+	<script >
+	function check()
+	{
+		var x=document.getElementById("1").value;
+		if (x>=180 && x<=200)
+		{
+          document.write("no is range of 180 to 200");
+
+		}
+		else if(x>=380 && x<=400)
+		{
+            document.write("no is range of 380 to 400");
+
+		}
+		else
+		{
+              document.write("out range");
+        }
+
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="1" ><br><br>
+<input type="button" value="Click here" onclick="check()"><br><br>
+
+</body>
+</html>
